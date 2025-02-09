@@ -19,7 +19,7 @@ Node* insert(Node* root, int key){
         return new Node(key);
     }
 
-    if(key < root->value){
+    if(key <= root->value){
         root->left = insert(root->left, key);
     }
     else if(key > root->value){
